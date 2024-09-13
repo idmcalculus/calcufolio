@@ -6,7 +6,7 @@ module.exports = {
 	  './components/**/*.{ts,tsx}',
 	  './app/**/*.{ts,tsx}',
 	  './src/**/*.{ts,tsx}',
-	  ],
+	],
 	theme: {
 	  container: {
 		center: true,
@@ -81,6 +81,18 @@ module.exports = {
 			'0%': { transform: 'translateY(100%)', opacity: '0' },
 			'100%': { transform: 'translateY(0)', opacity: '1' },
 		  },
+		  bounce: {
+			'0%, 100%': { transform: 'translateY(0)' },
+			'50%': { transform: 'translateY(-10px)' },
+		  },
+		  pulse: {
+			'0%, 100%': { opacity: '1' },
+			'50%': { opacity: '0.5' },
+		  },
+		  float: {
+			'0%, 100%': { transform: 'translateY(0)' },
+			'50%': { transform: 'translateY(-5px)' },
+		  },
 		},
 		animation: {
 		  "accordion-down": "accordion-down 0.2s ease-out",
@@ -89,8 +101,11 @@ module.exports = {
 		  'slide-in-right': 'slideInRight 1s ease-out',
 		  'slide-in-left': 'slideInLeft 1s ease-out',
 		  'slide-in-bottom': 'slideInBottom 1s ease-out',
+		  'bounce': 'bounce 2s infinite',
+		  'pulse': 'pulse 2s infinite',
+		  'float': 'float 3s infinite',
 		},
 	  },
 	},
 	plugins: [require("tailwindcss-animate")],
-}
+  }
