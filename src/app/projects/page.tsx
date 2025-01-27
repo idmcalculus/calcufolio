@@ -19,19 +19,19 @@ const allProjects = [
     title: "Catch The Ghost App",
     description: "A productivity app built with React Native and Firebase. I designed the user interface and implemented the real-time data synchronization feature using Firebase.",
     link: "https://www.aeeiee.com/catch-the-ghost/",
-    tags: ["React Native", "Firebase"]
+    tags: ["Swift", "SwiftUI", "UIKit", "Swift Package Manager (SPM)", "Core Data", "Facebook SDK", "Google SDK"]
   },
   {
     title: "Dress Measurement App",
-    description: "A content management system for blogs using Next.js and GraphQL. I developed the GraphQL API and integrated it with the Next.js frontend, ensuring efficient data fetching and management.",
+    description: "",
     link: "https://www.aeeiee.com/dress-measurement/",
-    tags: ["Next.js", "GraphQL"]
+    tags: ["Swift", "UIKit", "CocoaPods", "SQLite", "CloudKit"]
   },
   {
     title: "Iridium Go Exec Product Page",
-    description: "An iOS app for tracking workouts and nutrition using Swift and HealthKit. I implemented the HealthKit integration and designed the workout tracking algorithms to provide accurate fitness data.",
+    description: "",
     link: "https://www.iridium.com/go-exec/",
-    tags: ["iOS", "Swift", "HealthKit"]
+    tags: ["WordPress", "PHP", "jQuery", "MySQL", "AWS", "ACF", "Gutenberg", "Sass", "Bootstrap", "HTML", "CSS"]
   }
 ]
 

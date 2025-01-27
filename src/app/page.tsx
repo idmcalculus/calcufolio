@@ -20,25 +20,34 @@ const featuredProjects = [
     tags: ["React", "PHP", "jQuery", "MySQL", "AWS", "WordPress", "Gutenberg", "Sass", "Bootstrap", "HTML", "CSS"]
   },
   {
-    title: "Task Management App",
-    description: "A productivity app built with React Native and Firebase.",
-    link: "https://github.com/yourusername/task-management-app",
-    tags: ["React Native", "Firebase"]
+    title: "Iridium Go Exec Product Page",
+    description: "An iOS app for tracking workouts and nutrition using Swift and HealthKit. I implemented the HealthKit integration and designed the workout tracking algorithms to provide accurate fitness data.",
+    link: "https://www.iridium.com/go-exec/",
+    tags: ["WordPress", "PHP", "jQuery", "MySQL", "AWS", "ACF", "Gutenberg", "Sass", "Bootstrap", "HTML", "CSS"]
   }
 ]
 
-const skills = [
-  "Swift", "SwiftUI", "UIKit", "iOS Development", "JavaScript", "TypeScript", "React", "NestJS",
-  "Next.js", "Node.js", "Python", "Flask", "Django", "Express", "PostgreSQL", "MongoDB", "GraphQL",
+const tools = [
+  "JavaScript", "TypeScript", "React", "NestJS", "Next.js", "Node.js", "Python", "Flask", "Django", "Express",
+  "Swift", "SwiftUI", "UIKit", "PostgreSQL", "MongoDB", "GraphQL",
   "HTML", "CSS", "Git", "RESTful APIs", "AWS", "MySQL", "PHP", "jQuery", "Sass", "Bootstrap",
-  "Tailwind CSS", "Material UI", "Pulumi", "Github Actions", "Jest", "Mocha", "Pytest", "Docker",
+  "Tailwind CSS", "Material UI", "Pulumi", "Github Actions", "Jest", "Mocha", "Pytest", "unittest", "Docker",
   "Kubernetes", "Terraform", "Ansible", "AWS CDK"
 ]
 
+const skills = [
+  "iOS Development", "Web and UI development", "API design and development", "Cloud Computing", "Microservices and Monolith Architectures",
+  "Continuous Integration and Delivery (CI/CD)", "WordPress Themes and plugin development", "Testing and Automation", "Debugging and Optimisation",
+  "Agile Development", "Scrum Methodologies", "Data Structures and Algorithms", "Version Control", "Problem Solving", "Team Collaboration",
+  "Project Management", "Data Protection", "Security and Compliance", "App Store Deployment", "App Lifecycle", "Database Management", "Cloud Native", "DevOps",
+  "Fintech, Banking and Crypto", "Project Management", "Coding | Data Structure"
+]
+
+
 const experiences = [
-  { title: "Software Engineer II", company: "Aeeiee Inc.", period: "September 2020 - Present" },
+  { title: "Software Engineer II", company: "Aeeiee Inc.", period: "September 2020 - September 2024" },
   { title: "Senior FullStack Developer", company: "RCCG ICT Unit", period: "December 2020 - December 2022" },
-  { title: "Senior FullStack Developer", company: "Versa Nigeria", period: "February 2020 - July 2020" }
+  { title: "Senior FullStack Developer", company: "Versa Nigeria", period: "March 2020 - July 2020" }
 ]
 
 const education = [
@@ -47,8 +56,9 @@ const education = [
 ]
 
 const awards = [
-  { title: "Best Mobile App Award", organization: "App Developers Conference", year: "2021" },
-  { title: "Outstanding Contribution to Open Source", organization: "GitHub", year: "2020" }
+  { title: "Google-Andela-Udacity Mobile Web Scholarship", organization: "Andela in partnership with Google and Udacity", year: "2018" },
+  { title: "First Position in Oyo State Mathematics Olympiad", organization: "Mathematical Association of Nigeria", year: "2002" },
+  { title: "National Merit Award in Mathematics", organization: "National Mathematical Centre, Abuja, Nigeria", year: "1997" }
 ]
 
 export default function Home() {
@@ -120,7 +130,9 @@ export default function Home() {
         </section>
 
         <section className="mb-16 animate-slide-in-right">
-          <h2 className="text-2xl sm:text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Skills</h2>
+          <h2 className="my-5 text-2xl sm:text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Tools</h2>
+          <SkillsCloud skills={tools} />
+          <h2 className="my-5 text-2xl sm:text-3xl font-bold mb-8 text-center bg-clip-text text-transparent bg-gradient-to-r from-blue-500 to-green-500">Skills</h2>
           <SkillsCloud skills={skills} />
         </section>
 
